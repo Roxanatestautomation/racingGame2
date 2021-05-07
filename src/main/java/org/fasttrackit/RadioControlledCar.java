@@ -1,11 +1,8 @@
 package org.fasttrackit;
 
-public class RadioControlledCar {
-    String name;
-    String color;
+public class RadioControlledCar extends Autovehicle {
+
     int doorCount;
-    int wheelCount;
-    double mileage;
-    Engine engine;
+
 
 }
