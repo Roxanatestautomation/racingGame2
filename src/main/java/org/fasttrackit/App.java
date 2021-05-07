@@ -35,5 +35,6 @@ public class App
         race.firstcar = dacia;
         race.secondcar = lada;
 
+        dacia.accelerate(18.1);
     }
 }
