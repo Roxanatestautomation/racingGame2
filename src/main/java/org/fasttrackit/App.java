@@ -11,24 +11,24 @@ public class App
 
         RadioControlledCar dacia = new RadioControlledCar(daciaEngine);
 
-        dacia.name = "Dacia";
-        dacia.color = "red";
-        dacia.doorCount = 4;
-        dacia.wheelCount = 4;
-        dacia.mileage = 8.5;
-        dacia.engine = daciaEngine;
+        dacia.setName("Dacia");
+        dacia.setColor("red");
+        dacia.setDoorCount(4);
+        dacia.setWheelCount(4);
+        dacia.setMileage(8.5);
+
 
         Engine ladaEngine = new Engine();
-        ladaEngine.manufacturer = "Skoda";
+        ladaEngine.manufacturer = "Skoda" ;
 
         RadioControlledCar lada = new RadioControlledCar(ladaEngine);
 
-        lada.name = "Lada";
-        lada.color = "blue";
-        lada.doorCount = 2;
-        lada.wheelCount = 4;
-        lada.mileage = 8;
-        lada.engine = ladaEngine;
+        lada.setName("Lada");
+        lada.setColor("blue");
+        lada.setDoorCount(2);
+        lada.setWheelCount(4);
+        lada.setMileage(8);
+
 
         race.firstcar = dacia;
         race.secondcar = lada;
