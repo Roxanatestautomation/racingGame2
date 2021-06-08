@@ -33,6 +33,26 @@ public class App
         race.firstcar = dacia;
         race.secondcar = lada;
 
-        dacia.accelerate(18.1);
+        System.out.println(dacia.getName());
+        System.out.println(lada.getName());
+
+        System.out.println(RadioControlledCar.controlType);
+        System.out.println(dacia.controlType);
+        System.out.println(lada.controlType);
+
+        dacia.setName("Dacia Logan");
+
+        dacia.controlType = "Improved Radio Control";
+
+        System.out.println();
+
+        System.out.println("Changed values below: ");
+
+        System.out.println(dacia.getName());
+        System.out.println(lada.getName());
+
+        System.out.println("Value when called from class: " + RadioControlledCar.controlType);
+        System.out.println("Value when called from dacia object: " + dacia.controlType);
+        System.out.println("Value when called from lada object: " + lada.controlType);
     }
 }
