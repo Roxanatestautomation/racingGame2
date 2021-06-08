@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Vehicle {
 
-    public static String controlType = "Radio Control";
+    public static final String CONTROL_TYPE = "Radio Control";
 
     private String name;
     private String color;
