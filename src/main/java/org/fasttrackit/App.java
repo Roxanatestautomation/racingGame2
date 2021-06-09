@@ -29,9 +29,10 @@ public class App
         lada.setWheelCount(4);
         lada.setMileage(8);
 
-
         race.firstcar = dacia;
         race.secondcar = lada;
+
+        new Autovehicle(new Engine(), "Opel");
 
     }
 }

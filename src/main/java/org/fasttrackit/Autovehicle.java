@@ -7,6 +7,16 @@ public class Autovehicle extends Vehicle {
 
     public Autovehicle (Engine engine) {
         this.engine = engine;
+        System.out.println("Custom constructor called");
+    }
+
+    public Autovehicle (Engine engine, String name) {
+        this(engine);
+        setName(name);
+    }
+
+    public Autovehicle () {
+        this (new Engine());
     }
 
     public double getMileage() {
