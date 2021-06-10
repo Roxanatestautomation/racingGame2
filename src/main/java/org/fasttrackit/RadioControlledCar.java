@@ -16,4 +16,8 @@ public class RadioControlledCar extends AutoVehicle {
     public void setDoorCount(int doorCount) {
         this.doorCount = doorCount;
     }
+
+    public void checkRadioResponse(){
+
+    }
 }

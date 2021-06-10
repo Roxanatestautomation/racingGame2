@@ -1,19 +1,19 @@
 package org.fasttrackit;
 
 public class Race {
-    private RadioControlledCar firstCar;
-    private RadioControlledCar secondCar;
+    private Vehicle firstCompetitor;
+    private Vehicle secondCompetitor;
 
-    public Race(RadioControlledCar firstCar, RadioControlledCar secondCar) {
-        this.firstCar = firstCar;
-        this.secondCar = secondCar;
+    public Race(Vehicle firstCompetitor, Vehicle secondCar) {
+        this.firstCompetitor = firstCompetitor;
+        this.secondCompetitor = secondCar;
     }
 
-    public RadioControlledCar getFirstCar() {
-        return firstCar;
+    public Vehicle getFirstCompetitor() {
+        return firstCompetitor;
     }
 
-    public RadioControlledCar getSecondCar() {
-        return secondCar;
+    public Vehicle getSecondCar() {
+        return secondCompetitor;
     }
 }

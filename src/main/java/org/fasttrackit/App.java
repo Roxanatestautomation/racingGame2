@@ -27,10 +27,20 @@ public class App
         lada.setWheelCount(4);
         lada.setMileage(8);
 
-        Race race = new Race(dacia, lada);
+        RadioControlledMotorcycle harley = new RadioControlledMotorcycle(new Engine());
+
+        Race race = new Race(dacia, harley);
 
         new AutoVehicle(new Engine(), "Opel");
 
         System.out.println(dacia.toString());
+
+        Vehicle car1 = new RadioControlledCar(new Engine());
+        car1.accelerate(10.1);
+        AutoVehicle car2 = new RadioControlledCar(new Engine());
+        car2.accelerate(11.1);
+        RadioControlledCar car3 = new RadioControlledCar(new Engine());
+        car3.accelerate(12.1);
+        car3.checkRadioResponse();
     }
 }
