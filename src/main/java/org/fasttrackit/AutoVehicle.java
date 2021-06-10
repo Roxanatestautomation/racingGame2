@@ -34,9 +34,4 @@ public class AutoVehicle extends Vehicle {
     public void setEngine(Engine engine) {
         this.engine = engine;
     }
-
-    @Override
-    public double accelerate(double speed) {
-        return super.accelerate(speed);
-    }
 }

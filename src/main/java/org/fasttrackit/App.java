@@ -4,10 +4,8 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Race race = new Race();
-
         Engine daciaEngine = new Engine();
-        daciaEngine.manufacturer = "Renault";
+        daciaEngine.setManufacturer("Renault");
 
         RadioControlledCar dacia = new RadioControlledCar(daciaEngine);
 
@@ -19,7 +17,7 @@ public class App
 
 
         Engine ladaEngine = new Engine();
-        ladaEngine.manufacturer = "Skoda" ;
+        ladaEngine.setManufacturer("Skoda");
 
         RadioControlledCar lada = new RadioControlledCar(ladaEngine);
 
@@ -29,14 +27,10 @@ public class App
         lada.setWheelCount(4);
         lada.setMileage(8);
 
-        race.firstcar = dacia;
-        race.secondcar = lada;
+        Race race = new Race(dacia, lada);
 
         new AutoVehicle(new Engine(), "Opel");
 
         System.out.println(dacia.toString());
-
-        dacia.accelerate(10.1);
-
     }
 }
