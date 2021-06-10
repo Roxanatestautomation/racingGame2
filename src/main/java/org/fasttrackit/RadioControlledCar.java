@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class RadioControlledCar extends Autovehicle {
+public class RadioControlledCar extends AutoVehicle {
 
     public static String controlType = "Radio Control";
     private int doorCount;

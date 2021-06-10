@@ -32,7 +32,7 @@ public class App
         race.firstcar = dacia;
         race.secondcar = lada;
 
-        new Autovehicle(new Engine(), "Opel");
+        new AutoVehicle(new Engine(), "Opel");
 
     }
 }

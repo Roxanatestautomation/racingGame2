@@ -1,21 +1,21 @@
 package org.fasttrackit;
 
-public class Autovehicle extends Vehicle {
+public class AutoVehicle extends Vehicle {
 
     private double mileage;
     private Engine engine;
 
-    public Autovehicle (Engine engine) {
+    public AutoVehicle (Engine engine) {
         this.engine = engine;
         System.out.println("Custom constructor called");
     }
 
-    public Autovehicle (Engine engine, String name) {
+    public AutoVehicle (Engine engine, String name) {
         this(engine);
         setName(name);
     }
 
-    public Autovehicle () {
+    public AutoVehicle () {
         this (new Engine());
     }
 
