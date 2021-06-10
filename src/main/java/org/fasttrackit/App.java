@@ -36,5 +36,7 @@ public class App
 
         System.out.println(dacia.toString());
 
+        dacia.accelerate(10.1);
+
     }
 }
