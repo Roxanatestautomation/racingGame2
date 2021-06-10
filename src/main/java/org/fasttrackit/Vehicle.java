@@ -36,4 +36,13 @@ public class Vehicle {
     public void setWheelCount(int wheelCount) {
         this.wheelCount = wheelCount;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", wheelCount=" + wheelCount +
+                '}';
+    }
 }

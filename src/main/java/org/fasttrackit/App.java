@@ -34,5 +34,7 @@ public class App
 
         new AutoVehicle(new Engine(), "Opel");
 
+        System.out.println(dacia.toString());
+
     }
 }
