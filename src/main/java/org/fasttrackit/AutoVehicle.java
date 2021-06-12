@@ -52,6 +52,7 @@ public class AutoVehicle extends Vehicle {
 
         System.out.println("Fuel level left for " + getName() + " is: " + fuelLevel);
         System.out.println("Distance traveled" + getName() + " is: " + travelDistance);
+        System.out.println();
 
         return travelDistance;
     }

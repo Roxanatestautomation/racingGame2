@@ -1,19 +1,21 @@
 package org.fasttrackit;
 
 public class Race {
-    private Vehicle firstCompetitor;
-    private Vehicle secondCompetitor;
 
-    public Race(Vehicle firstCompetitor, Vehicle secondCar) {
-        this.firstCompetitor = firstCompetitor;
-        this.secondCompetitor = secondCar;
+    private Vehicle[] competitors = new Vehicle[10]; // array with a certain number of objects//
+
+    public Race(Vehicle...competitors) { //introduce a parameter "varargs" (Vehicle...), a array with unlimited elements//
+    this.competitors=competitors;
     }
 
-    public Vehicle getFirstCompetitor() {
-        return firstCompetitor;
+    public Vehicle[] getCompetitors() {
+        return competitors;
     }
 
-    public Vehicle getSecondCar() {
-        return secondCompetitor;
+    //instead of setter, crete a method that will insert elements one at the time//
+
+    public void insertCompetitors(int index, Vehicle vehicle){
+        competitors[index]=vehicle;
+
     }
 }

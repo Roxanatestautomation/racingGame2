@@ -34,9 +34,11 @@ public class App
         harley.setName("Harley");
         harley.accelerate(10);
 
-        Race race = new Race(dacia, harley);
+        Race race = new Race();
+        race.insertCompetitors(0, dacia);
+        race.insertCompetitors(1, lada);
 
-
+        System.out.println(race.getCompetitors()[0].getName());
 
     }
 }
