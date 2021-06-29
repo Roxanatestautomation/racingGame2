@@ -35,8 +35,9 @@ public class App
         harley.accelerate(10);
 
         Race race = new Race();
-        race.insertCompetitors(0, dacia);
-        race.insertCompetitors(1, lada);
+
+        race.getCompetitors().add(dacia);
+        race.getCompetitors().add(lada);
 
         // enhanced for loop //
         for (Vehicle vehicle : race.getCompetitors()) {

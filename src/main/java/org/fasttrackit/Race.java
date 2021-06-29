@@ -1,15 +1,13 @@
 package org.fasttrackit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Race {
 
-    private Vehicle[] competitors = new Vehicle[10]; // array with a certain number of objects//
+    private List<Vehicle>competitors =new ArrayList<Vehicle>();
 
-    public Vehicle[] getCompetitors() {
+    public List<Vehicle> getCompetitors() {
         return competitors;
-    }
-
-    //instead of setter, crete a method that will insert elements one at the time//
-    public void insertCompetitors(int index, Vehicle vehicle){
-        competitors[index]=vehicle;
     }
 }
