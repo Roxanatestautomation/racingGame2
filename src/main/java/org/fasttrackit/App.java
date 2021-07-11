@@ -34,7 +34,7 @@ public class App
         harley.setName("Harley");
         harley.accelerate(10);
 
-        Race race = new Race();
+        Race race = new Race(dacia, lada);
         race.insertCompetitors(0, dacia);
         race.insertCompetitors(1, lada);
 
