@@ -29,12 +29,13 @@ public class Race {
 
         Scanner scanner = new Scanner(System.in);
 
-        double accelerationSpeed;
+        double accelerationSpeed = 0;
 
         try {
             accelerationSpeed = scanner.nextDouble();
         } catch (InputMismatchException exception) {
-            throw new Exception("Please enter a valid number.");
+            System.out.println("Please enter a valid number.");
+            return readAccelerationSpeed(); // se reia method readAccelerationSpeed
         }
 
         System.out.println("Vehicle`s acceleration speed is: " + accelerationSpeed + " km/h");
