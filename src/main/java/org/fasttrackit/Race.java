@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,18 +24,22 @@ public class Race {
         return vehicleName;
     }
 
-    public double readAccelerationSpeed(){
+    public double readAccelerationSpeed() throws Exception {
         System.out.println("Please enter acceleration speed as a decimal number...");
 
         Scanner scanner = new Scanner(System.in);
-        double accelerationSpeed = scanner.nextDouble();
+
+        double accelerationSpeed;
+
+        try {
+            accelerationSpeed = scanner.nextDouble();
+        } catch (InputMismatchException exception) {
+            throw new Exception("Please enter a valid number.");
+        }
 
         System.out.println("Vehicle`s acceleration speed is: " + accelerationSpeed + " km/h");
 
         return accelerationSpeed;
 
-
-
     }
-
 }
