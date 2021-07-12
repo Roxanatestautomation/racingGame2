@@ -1,7 +1,6 @@
 package org.fasttrackit;
 
-public class App 
-{
+public class App {
     public static void main( String[] args ) {
 
         Engine daciaEngine = new Engine();
@@ -46,5 +45,9 @@ public class App
                 System.out.println(vehicle.getName());
             }
         }
+
+        race.readVehicleName();
+        race.readAccelerationSpeed();
+
     }
 }
